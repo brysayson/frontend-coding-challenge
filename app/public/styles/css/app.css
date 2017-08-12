@@ -1,0 +1,31 @@
+body .col-centered {
+  float: none;
+  margin: 0 auto; }
+
+body .mainContainer {
+  margin-top: 50px; }
+  body .mainContainer .form-group .input-group {
+    width: 100%;
+    border: 2px solid lightgray; }
+  body .mainContainer .cinemaContainer {
+    margin-bottom: 15px; }
+    body .mainContainer .cinemaContainer span {
+      padding: 0;
+      text-transform: uppercase;
+      margin-right: 15px; }
+  body .mainContainer .movieContainer {
+    border: 2px solid lightgray; }
+    body .mainContainer .movieContainer .movie {
+      display: block;
+      margin-bottom: 20px;
+      padding: 20px; }
+      body .mainContainer .movieContainer .movie .posterContainer img {
+        width: 100%; }
+  body .mainContainer .movieInfo {
+    padding: 20px; }
+    body .mainContainer .movieInfo .movieTitle .title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px; }
+    body .mainContainer .movieInfo .movieTitle .showTimes span {
+      font-weight: bold; }
