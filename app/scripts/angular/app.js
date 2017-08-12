@@ -11,6 +11,5 @@ angular.module('movieApp', [])
     		var data = angular.extend({showtimes: cinema.showtimes[key]}, $scope.movieData[key]);
     		$scope.currentMovies.push(data);
     	});
-    	console.log($scope);
     };
   }]);
