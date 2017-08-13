@@ -12,7 +12,32 @@ angular.module('movieApp', [])
     		$scope.currentMovies.push(data);
     	});
     };
-  }]);
+
+    $scope.compareTimes = function(time) {
+        console.log(time);
+        var now = new Date();
+        var yr = now.getFullYear();
+        var mn = now.getMonth();
+        // account for months going from 0-11 instead of 1-12 in the Date obj
+        mn ++;
+        var day = now.getDate();
+
+        var showTimeDate = yr + '/' + mn + '/' + day + ' ' + time;
+
+        var rightNow = new Date(Date.parse(now));
+        var showTime = new Date(Date.parse(showTimeDate));
+
+        console.log(showTimeDate);
+
+        console.log(rightNow);
+        console.log(showTime);
+
+        if (rightNow > showTime) {
+            return 'faded';
+        };
+    };
+
+}]);
 angular.module('movieApp')
     .factory('dataFactory', ['$http', function($http) {
     var dataFactory = {};

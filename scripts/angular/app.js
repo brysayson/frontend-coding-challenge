@@ -12,4 +12,24 @@ angular.module('movieApp', [])
     		$scope.currentMovies.push(data);
     	});
     };
-  }]);
+
+    $scope.compareTimes = function(time) {
+        var now = new Date();
+        var yr = now.getFullYear();
+        var mn = now.getMonth();
+        // account for months going from 0-11 instead of 1-12 in the Date obj
+        mn ++;
+        var day = now.getDate();
+
+        var showTimeDate = yr + '/' + mn + '/' + day + ' ' + time;
+
+        // parse for comparison
+        var rightNow = new Date(Date.parse(now));
+        var showTime = new Date(Date.parse(showTimeDate));
+
+        if (rightNow > showTime) {
+            return 'faded';
+        };
+    };
+
+}]);

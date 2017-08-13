@@ -1,10 +1,18 @@
-@media screen and (max-width: 768px) {
-	.cinema {
-		display: block;
-		margin: 0px;
-		text-align: center;
-		background-color: orange;
-		color: white;
+$smallFormat: "(min-width: 300px) and (max-width: 768px)";
+
+@media #{$smallFormat} {
+	body {
+		.mainContainer {
+			.cinemaContainer {
+				.cinema {
+					display: block;
+					margin: 0px;
+					text-align: center;
+					background-color: orange;
+					color: white;
+				}
+			}
+		}
 	}
 }
 
@@ -48,10 +56,14 @@ body {
 					font-weight: bold;
 					margin-bottom: 10px;
 				}
-				.showTimes {
-					span {
-						font-weight: bold;
-					}
+			}
+			.showTimes {
+				span {
+					font-weight: bold;
+					margin-right: 5px;
+				}
+				span.faded {
+					color: gray;
 				}
 			}
 		}

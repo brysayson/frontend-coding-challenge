@@ -23,10 +23,14 @@
       <span ng-repeat="cinema in showTimes" ng-click="handleCinemaSwitch(cinema)">
         {{cinema.name}}
       </span>
+      <select ng-model="sortExpression">
+        <option value="+title">(A-Z)</option>
+       <option value="-title">(Z-A)</option>
+      </select>
     </div>
 
     <div class="movieContainer" ng-if="currentMovies">
-      <div ng-repeat="movie in currentMovies | filter: searchMovies" class="movie row">
+      <div ng-repeat="movie in currentMovies | orderBy: sortExpression | filter: searchMovies" class="movie row">
         <div class="posterContainer col-md-4">
           <img src="{{movie.poster}}">
         </div>
@@ -35,7 +39,7 @@
             <span class="title"> {{movie.title}} </span> <span class="rating"> ({{movie.rating}}) </span>
           </div>
           <div class="showTimes">
-            <span ng-repeat="time in movie.showtimes"> {{time}} </span>
+            <span ng-repeat="time in movie.showtimes" ng-class="compareTimes(time)"> {{time}} </span>
           </div>
       </div>
     </div>

@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "angular-moment": "^1.0.1",
     "express": "^4.15.4",
     "gulp": "^3.9.1",
     "gulp-cli": "^1.4.0",
@@ -15,6 +16,7 @@
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
     "jshint": "^2.9.5",
+    "moment": "^2.18.1",
     "node.js": "^0.0.0"
   },
   "devDependencies": {},
