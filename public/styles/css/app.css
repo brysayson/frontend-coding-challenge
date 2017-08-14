@@ -17,10 +17,22 @@ body .mainContainer {
     border: 2px solid lightgray; }
   body .mainContainer .cinemaContainer {
     margin-bottom: 15px; }
+    body .mainContainer .cinemaContainer span.active {
+      border-bottom: 4px solid orange; }
     body .mainContainer .cinemaContainer span {
       padding: 0;
       text-transform: uppercase;
       margin-right: 15px; }
+    body .mainContainer .cinemaContainer .filters {
+      display: inline;
+      float: right; }
+      body .mainContainer .cinemaContainer .filters .filter {
+        margin-right: 10px;
+        width: 50%;
+        display: inline; }
+        body .mainContainer .cinemaContainer .filters .filter label {
+          font-weight: normal;
+          text-transform: uppercase; }
   body .mainContainer .movieContainer {
     border: 2px solid lightgray; }
     body .mainContainer .movieContainer .movie {

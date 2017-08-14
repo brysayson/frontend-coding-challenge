@@ -31,10 +31,26 @@ body {
 		}
 		.cinemaContainer {
 			margin-bottom: 15px;
+			span.active {
+				border-bottom:4px solid orange;
+			}
 			span {
 				padding: 0;
 				text-transform: uppercase;
 				margin-right: 15px;
+			}
+			.filters {
+				display: inline;
+    			float: right;
+    			.filter {
+    				margin-right: 10px;
+    				width: 50%;
+    				display: inline;
+	    			label {
+	    				font-weight: normal;
+	    				text-transform: uppercase;
+	    			}
+    			}
 			}
 		}
 		.movieContainer {
