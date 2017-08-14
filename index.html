@@ -23,22 +23,23 @@
       <span ng-repeat="cinema in showTimes" class="cinema" ng-class="{'active': selectedCinema === cinema.name}" ng-click="handleCinemaSwitch(cinema)">
         {{cinema.name}}
       </span>
-      <div class="filters">
-        <div class="filter">
-          <label for="sort">Sort:</label>
-          <select ng-model="sortExpression">
-            <option value="+title">(A-Z)</option>
-            <option value="-title">(Z-A)</option>
-          </select>
-        </div>
-        <div class="filter">
-          <label for="sort">Rating:</label>
-          <select ng-model="filterRating">
-            <option value="{{undefined}}">All</option>
-            <option value="PG-13">PG-13</option>
-            <option value="R">R</option>
-          </select>
-        </div>
+    </div>
+
+    <div class="filters">
+      <div class="filter">
+        <label for="sort">Sort:</label>
+        <select ng-model="sortExpression">
+          <option value="+title">(A-Z)</option>
+          <option value="-title">(Z-A)</option>
+        </select>
+      </div>
+      <div class="filter">
+        <label for="sort">Rating:</label>
+        <select ng-model="filterRating">
+          <option value="{{undefined}}">All</option>
+          <option value="PG-13">PG-13</option>
+          <option value="R">R</option>
+        </select>
       </div>
     </div>
 

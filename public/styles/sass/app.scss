@@ -1,69 +1,69 @@
-@media (min-width: 768px) {
-	body {
-		.col-centered {
-		    float: none;
-		    margin: 0 auto;
-		}
-		.mainContainer {
-			margin-top: 50px;
-			.form-group {
-				.input-group {
-					width: 100%;
-					border: 2px solid lightgray;
-				}
-			}
-			.cinemaContainer {
-				margin-bottom: 15px;
-				span.active {
-					border-bottom:4px solid orange;
-				}
-				span {
-					padding: 0;
-					text-transform: uppercase;
-					margin-right: 15px;
-				}
-				.filters {
-					display: inline;
-	    			float: right;
-	    			.filter {
-	    				margin-right: 10px;
-	    				width: 50%;
-	    				display: inline;
-		    			label {
-		    				font-weight: normal;
-		    				text-transform: uppercase;
-		    			}
-	    			}
-				}
-			}
-			.movieContainer {
+body {
+	.col-centered {
+	    float: none;
+	    margin: 0 auto;
+	}
+	.mainContainer {
+		margin-top: 50px;
+		.form-group {
+			.input-group {
+				width: 100%;
 				border: 2px solid lightgray;
-				.movie {
-					display: block;
-					margin-bottom: 20px;
-					padding: 20px;
-					.posterContainer img {
-						width: 100%;
-					}
+			}
+		}
+		.cinemaContainer {
+			margin-bottom: 15px;
+			display: inline;
+			span.active {
+				border-bottom:4px solid orange;
+			}
+			span {
+				padding: 0;
+				text-transform: uppercase;
+				margin-right: 15px;
+			}
+		}
+		.filters {
+			display: inline;
+			float: right;
+			.filter {
+				margin-right: 10px;
+				width: 50%;
+				display: inline;
+    			label {
+    				font-weight: normal;
+    				text-transform: uppercase;
+    			}
+			}
+		}
+		.movieContainer {
+			border: 2px solid lightgray;
+			margin-top: 15px;
+			.movie {
+				display: block;
+				margin-bottom: 20px;
+				padding: 20px;
+				.posterContainer img {
+					width: 100%;
 				}
 			}
-			.movieInfo {
-				padding: 20px;
-				.movieTitle {
-					.title {
-						font-size: 20px;
-						font-weight: bold;
-						margin-bottom: 10px;
-					}
+		}
+		.movieInfo {
+			padding: 20px;
+			.movieTitle {
+				.title {
+					font-size: 20px;
+					font-weight: bold;
+					margin-bottom: 10px;
 				}
-				.showTimes {
-					span {
-						font-weight: bold;
-						margin-right: 5px;
-					}
-					span.faded {
-						opacity: 0.5;
-					}
+			}
+			.showTimes {
+				span {
+					font-weight: bold;
+					margin-right: 5px;
+				}
+				span.faded {
+					opacity: 0.5;
 				}
 			}
 		}
@@ -88,10 +88,17 @@
 					background-color: orange;
 					color: white;
 				}
-				.filters {
-					.filter {
-						display: inline;
-					}
+			}
+			.movieContainer {
+				margin-top: 30px;
+			}
+			.filters {
+				display: inline;
+			    float: none;
+			    position: relative;
+			    top: 10px;
+				.filter {
+					display: inline;
 				}
 			}
 		}

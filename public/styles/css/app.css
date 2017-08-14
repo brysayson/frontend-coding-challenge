@@ -1,49 +1,51 @@
-@media (min-width: 768px) {
-  body .col-centered {
-    float: none;
-    margin: 0 auto; }
-  body .mainContainer {
-    margin-top: 50px; }
-    body .mainContainer .form-group .input-group {
-      width: 100%;
-      border: 2px solid lightgray; }
-    body .mainContainer .cinemaContainer {
-      margin-bottom: 15px; }
-      body .mainContainer .cinemaContainer span.active {
-        border-bottom: 4px solid orange; }
-      body .mainContainer .cinemaContainer span {
-        padding: 0;
-        text-transform: uppercase;
-        margin-right: 15px; }
-      body .mainContainer .cinemaContainer .filters {
-        display: inline;
-        float: right; }
-        body .mainContainer .cinemaContainer .filters .filter {
-          margin-right: 10px;
-          width: 50%;
-          display: inline; }
-          body .mainContainer .cinemaContainer .filters .filter label {
-            font-weight: normal;
-            text-transform: uppercase; }
-    body .mainContainer .movieContainer {
-      border: 2px solid lightgray; }
-      body .mainContainer .movieContainer .movie {
-        display: block;
-        margin-bottom: 20px;
-        padding: 20px; }
-        body .mainContainer .movieContainer .movie .posterContainer img {
-          width: 100%; }
-    body .mainContainer .movieInfo {
+body .col-centered {
+  float: none;
+  margin: 0 auto; }
+
+body .mainContainer {
+  margin-top: 50px; }
+  body .mainContainer .form-group .input-group {
+    width: 100%;
+    border: 2px solid lightgray; }
+  body .mainContainer .cinemaContainer {
+    margin-bottom: 15px;
+    display: inline; }
+    body .mainContainer .cinemaContainer span.active {
+      border-bottom: 4px solid orange; }
+    body .mainContainer .cinemaContainer span {
+      padding: 0;
+      text-transform: uppercase;
+      margin-right: 15px; }
+  body .mainContainer .filters {
+    display: inline;
+    float: right; }
+    body .mainContainer .filters .filter {
+      margin-right: 10px;
+      width: 50%;
+      display: inline; }
+      body .mainContainer .filters .filter label {
+        font-weight: normal;
+        text-transform: uppercase; }
+  body .mainContainer .movieContainer {
+    border: 2px solid lightgray;
+    margin-top: 15px; }
+    body .mainContainer .movieContainer .movie {
+      display: block;
+      margin-bottom: 20px;
       padding: 20px; }
-      body .mainContainer .movieInfo .movieTitle .title {
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: 10px; }
-      body .mainContainer .movieInfo .showTimes span {
-        font-weight: bold;
-        margin-right: 5px; }
-      body .mainContainer .movieInfo .showTimes span.faded {
-        opacity: 0.5; } }
+      body .mainContainer .movieContainer .movie .posterContainer img {
+        width: 100%; }
+  body .mainContainer .movieInfo {
+    padding: 20px; }
+    body .mainContainer .movieInfo .movieTitle .title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px; }
+    body .mainContainer .movieInfo .showTimes span {
+      font-weight: bold;
+      margin-right: 5px; }
+    body .mainContainer .movieInfo .showTimes span.faded {
+      opacity: 0.5; }
 
 @media (min-width: 0px) and (max-width: 767px) {
   body .mainContainer {
@@ -57,5 +59,12 @@
       text-align: center;
       background-color: orange;
       color: white; }
-    body .mainContainer .cinemaContainer .filters .filter {
-      display: inline; } }
+    body .mainContainer .movieContainer {
+      margin-top: 30px; }
+    body .mainContainer .filters {
+      display: inline;
+      float: none;
+      position: relative;
+      top: 10px; }
+      body .mainContainer .filters .filter {
+        display: inline; } }
