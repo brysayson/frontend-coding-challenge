@@ -50,18 +50,22 @@ body .mainContainer {
 
 @media (min-width: 0px) and (max-width: 767px) {
   body .mainContainer {
-    width: auto;
-    padding-right: 0; }
+    width: auto; }
     body .mainContainer .search-container .input-group {
       width: 100%; }
     body .mainContainer .cinemaContainer span.active {
-      border-bottom: none; }
+      border-bottom: none;
+      background-color: orange;
+      color: white; }
     body .mainContainer .cinemaContainer span {
       display: block;
       margin: 0px;
       text-align: center;
-      background-color: orange;
-      color: white; }
+      color: lightgray;
+      border: 1px solid lightgray;
+      min-height: 40px;
+      line-height: 40px;
+      margin-bottom: 2.5px; }
     body .mainContainer .movieContainer {
       margin-top: 30px; }
     body .mainContainer .filters {
